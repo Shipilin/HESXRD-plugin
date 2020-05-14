@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>net.imagej</groupId>
+		<artifactId>pom-imagej</artifactId>
+		<version>5.2.5</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>HESXRD_plugin</artifactId>
+	<version>1.0.15</version>
+
+	<name>HESXRD_plugin_old.jar</name>
+	<description>ImageJ plugin working with high-energy surface X-ray diffraction experimental data</description>
+
+	<developers>
+		<developer>
+			<id>shipilin</id>
+			<name>Mikhail Shipilin</name>
+			<email>mikhail.shipilin@sljus.lu.se</email>
+			<url>http://www.sljus.lu.se/staff-and-contact-information/#0</url>
+			<organization>Lund University</organization>
+			<organizationUrl>http://lu.se/</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+
+	<properties>
+		<main-class>HESXRD_</main-class>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>HESXRD_</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
